@@ -16,8 +16,8 @@ export PATH=/usr/local/sbin:/usr/sbin:/sbin/bin:/usr/bin:/usr/local/bin:/usr/loc
 %post
 ################################################################################
 
-deb http://downloads.skewed.de/apt/xenial xenial universe
-deb-src http://downloads.skewed.de/apt/xenial xenial universe
+deb http://downloads.skewed.de/apt/xenial universe
+deb-src http://downloads.skewed.de/apt/xenial universe
 apt-get update
 apt-get install python-graph-tool
 apt-get clean
