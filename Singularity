@@ -16,13 +16,6 @@ export PATH=/usr/local/sbin:/usr/sbin:/sbin/bin:/usr/bin:/usr/local/bin:/usr/loc
 %post
 ################################################################################
 
-deb http://downloads.skewed.de/apt/xenial xenial universe
-deb-src http://downloads.skewed.de/apt/xenial xenial universe
-apt-key adv --keyserver pgp.skewed.de --recv-key 612DEFB798507F25
-
-apt-get update
-apt-get install python-graph-tool
-apt-get clean
 
 ###
 ### destination for NIH HPC bind mounts
