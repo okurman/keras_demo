@@ -16,6 +16,17 @@ export PATH=/usr/local/sbin:/usr/sbin:/sbin/bin:/usr/bin:/usr/local/bin:/usr/loc
 %post
 ################################################################################
 
+###
+### install keras + tensorflow + other useful packages
+###
+apt-get update
+apt-get install -y libhdf5-dev graphviz locales python3-dev python3-pip
+locale-gen en_US.UTF-8
+apt-get clean
+
+pip3 install tensorflow-gpu==1.3.0
+pip3 install keras==2.0.8
+pip3 install Pillow scikit-learn pandas matplotlib notebook ipython
 
 ###
 ### destination for NIH HPC bind mounts
